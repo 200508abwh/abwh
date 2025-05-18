@@ -20,10 +20,10 @@ void createAccount() {
         return;
     }
 
-    getchar(); // لتفادي مشاكل الإدخال
+    getchar(); 
     printf("Enter your name: ");
     fgets(newAcc.name, sizeof(newAcc.name), stdin);
-    newAcc.name[strcspn(newAcc.name, "\n")] = '\0'; // إزالة السطر الجديد
+    newAcc.name[strcspn(newAcc.name, "\n")] = '\0'; 
 
     printf("Enter your account number: ");
     scanf("%d", &newAcc.accountNumber);
